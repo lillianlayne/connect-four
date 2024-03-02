@@ -1,0 +1,82 @@
+@import url("https://use.typekit.net/itb1gux.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: mundial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  background: #f3ede1;
+  padding: 40px;
+  color: #44341B
+}
+
+header {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .1em;
+}
+h1 {
+    margin: 0;
+    padding: 1vmin;
+}
+
+#markers {
+  display: grid;
+  grid-template-columns: repeat(7, 8vmin);
+  gap: 1vmin;
+  margin-top: 1.5vmin;
+}
+
+#markers > div {
+    height: 5vmin;
+    border-width: 5vmin;
+    background-color: #D2C7B1;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    transform: scale(.5);
+    cursor: pointer;
+}
+
+#markers > div:hover {
+    transform: scale(1.02);
+    background-color: #E8704E;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(7, 8vmin);
+    grid-template-rows: repeat(6, 8vmin);
+    gap: 1vmin;
+    margin: 2vmin 0;
+    cursor: pointer;
+}
+
+#board > div {
+    border: .1vmin solid #D2C7B1;
+    height: 8vmin;
+    border-radius: 100%;
+}
+
+button {
+    background: #89A7CB;
+   padding: 2vmin;
+    border: .1vmin solid #89A7CB;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border-radius: 8px;
+    margin: 1vmin 0;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: none;
+    border-color: #89A7CB;
+    color: #89A7CB
+}
