@@ -37,7 +37,7 @@ h1 {
 #markers > div {
     height: 5vmin;
     border-width: 5vmin;
-    background-color: #D2C7B1;
+    background-color: #816946;
     clip-path: polygon(0 0, 100% 0, 50% 100%);
     transform: scale(.5);
     cursor: pointer;
@@ -58,7 +58,7 @@ h1 {
 }
 
 #board > div {
-    border: .1vmin solid #D2C7B1;
+    border: .1vmin solid #816946;
     height: 8vmin;
     border-radius: 100%;
 }
