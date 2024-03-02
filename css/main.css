@@ -80,3 +80,33 @@ button:hover {
     border-color: #89A7CB;
     color: #89A7CB
 }
+
+@media only screen and (max-width: 900px) {
+    
+    #board {
+        grid-template-columns: repeat(7, 12vmin);
+        grid-template-rows: repeat(6, 12vmin);
+        gap: 1vmin;
+        margin: 2vmin 0;
+    }
+#board > div {
+    height: 12vmin;
+}
+
+#markers {
+    display: grid;
+    grid-template-columns: repeat(7, 12vmin);
+    gap: 1vmin;
+    margin-top: 1.5vmin;
+  }
+
+  header {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h1 {
+    margin-bottom: 20%;;
+  }
+}
